@@ -13,7 +13,6 @@ public class MyFileVisitor extends SimpleFileVisitor<Path> {
     private List<File> list = new ArrayList<>();
     private List<Long> listSize = new ArrayList<>();
     private int id = 1;
-    private boolean flag = true;
 
     public List<File> getList() {
         return list;
@@ -23,7 +22,7 @@ public class MyFileVisitor extends SimpleFileVisitor<Path> {
         ++id;
         return size;
     }
-    
+
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes atr){
         list.add(file.toFile());
