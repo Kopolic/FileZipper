@@ -10,8 +10,8 @@ import java.util.List;
 
 public class MyFileVisitor extends SimpleFileVisitor<Path> {
 
-    private List<File> list = new ArrayList<>();
-    private List<Long> listSize = new ArrayList<>();
+    private final List<File> list = new ArrayList<>();
+    private final List<Long> listSize = new ArrayList<>();
     private int id = 1;
 
     public List<File> getList() {
